@@ -1,0 +1,14 @@
+body{
+    height: 100vh;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 25px;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.grids{
+    background-color: blue;
+}
