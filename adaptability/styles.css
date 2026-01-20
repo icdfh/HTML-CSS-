@@ -560,3 +560,38 @@ input:focus {
   color: rgba(255,255,255,0.62);
   font-size: 13px;
 }
+
+
+
+@media (max-width: 860px) {
+  .headline { font-size: 32px; }
+  .hero-photo { height: 300px; }
+}
+
+@media (max-width: 720px) {
+  .burger { display: flex; }
+  .links { display: none; }
+  .btn { display: none; }
+
+
+  .nav-toggle:checked ~ .links {
+    display: flex;
+    width: 100%;
+    order: 10;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-toggle:checked ~ .links a {
+    width: 100%;
+  }
+
+  .header { flex-wrap: wrap; }
+  .logo { margin-right: auto; }
+}
+
+@media (max-width: 520px) {
+  .main { width: calc(100% - 24px); }
+  .header, .footer { width: calc(100% - 24px); }
+  .headline { font-size: 28px; }
+}
